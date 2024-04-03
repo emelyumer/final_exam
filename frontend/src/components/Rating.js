@@ -10,55 +10,56 @@ function Rating({value, text, color}) {
                         ? 'fas fa-star'
                         :value >= 0.5
                             ? 'fas fa-star-half-alt'
-                            : 'fas fa-star'
+                            : 'far fa-star'
 
                 }>
                 </i>
             </span>
             <span>
                 <i style={{color}} className={
-                    value >= 1
+                    value >= 2
                         ? 'fas fa-star'
-                        :value >= 0.5
+                        :value >= 1.5
                             ? 'fas fa-star-half-alt'
-                            : 'fas fa-star'
+                            : 'far fa-star'
 
                 }>
                 </i>
             </span>
             <span>
                 <i style={{color}} className={
-                    value >= 1
+                    value >= 3
                         ? 'fas fa-star'
-                        :value >= 0.5
+                        :value >= 2.5
                             ? 'fas fa-star-half-alt'
-                            : 'fas fa-star'
+                            : 'far fa-star'
 
                 }>
                 </i>
             </span>
             <span>
                 <i style={{color}} className={
-                    value >= 1
+                    value >= 4
                         ? 'fas fa-star'
-                        :value >= 0.5
+                        :value >= 3.5
                             ? 'fas fa-star-half-alt'
-                            : 'fas fa-star'
+                            : 'far fa-star'
 
                 }>
                 </i>
             </span>
             <span>
                 <i style={{color}} className={
-                    value >= 1
+                    value >= 5
                         ? 'fas fa-star'
-                        :value >= 0.5
+                        :value >= 4.5
                             ? 'fas fa-star-half-alt'
-                            : 'fas fa-star'
+                            : 'far fa-star'
 
                 }>
                 </i>
             </span>
+            <span>{text && text}</span>
         </div>
     )
 }
