@@ -4,13 +4,13 @@ from final_exam.base.models import Product, Review, Order, OrderItem, ShippingAd
 UserModel = get_user_model()
 
 
-@admin.register(UserModel)
-class AppUserAdmin(auth_admin.UserAdmin):
-    model = UserModel
-
-    list_display = ('pk', 'email', 'is_staff', 'is_superuser')
-    search_fields = ('email',)
-    ordering = ('pk',)
+# @admin.register(UserModel)
+# class AppUserAdmin(auth_admin.UserAdmin):
+#     model = UserModel
+#
+#     list_display = ('pk', 'email', 'is_staff', 'is_superuser')
+#     search_fields = ('email',)
+#     ordering = ('pk',)
 
 
 @admin.register(Product)
