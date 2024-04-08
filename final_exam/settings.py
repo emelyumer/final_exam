@@ -130,6 +130,15 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Directories on the file system
+STATICFILES_DIRS = (
+    BASE_DIR / "static",
+)
+
+MEDIA_ROOT = BASE_DIR / 'static/images'
+
+MEDIA_URL = '/images/'
+
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
 ]
